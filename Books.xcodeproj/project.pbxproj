@@ -22,6 +22,12 @@
 		0BF37F031836A3D4007D68A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37EE21836A3D3007D68A9 /* UIKit.framework */; };
 		0BF37F0B1836A3D4007D68A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BF37F091836A3D4007D68A9 /* InfoPlist.strings */; };
 		0BF37F0D1836A3D4007D68A9 /* BooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F0C1836A3D4007D68A9 /* BooksTests.m */; };
+		0BF37F1D1836A617007D68A9 /* AddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F171836A617007D68A9 /* AddBookViewController.m */; };
+		0BF37F1E1836A617007D68A9 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F191836A617007D68A9 /* Book.m */; };
+		0BF37F1F1836A617007D68A9 /* SimpleBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F1C1836A617007D68A9 /* SimpleBookManager.m */; };
+		0BF37F261836A62E007D68A9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F211836A62E007D68A9 /* DetailViewController.m */; };
+		0BF37F271836A62E007D68A9 /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F231836A62E007D68A9 /* EditBookViewController.m */; };
+		0BF37F281836A62E007D68A9 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37F251836A62E007D68A9 /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,19 @@
 		0BF37F081836A3D4007D68A9 /* BooksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BooksTests-Info.plist"; sourceTree = "<group>"; };
 		0BF37F0A1836A3D4007D68A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0BF37F0C1836A3D4007D68A9 /* BooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksTests.m; sourceTree = "<group>"; };
+		0BF37F161836A617007D68A9 /* AddBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookViewController.h; sourceTree = "<group>"; };
+		0BF37F171836A617007D68A9 /* AddBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookViewController.m; sourceTree = "<group>"; };
+		0BF37F181836A617007D68A9 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		0BF37F191836A617007D68A9 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		0BF37F1A1836A617007D68A9 /* BookManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManagerProtocol.h; sourceTree = "<group>"; };
+		0BF37F1B1836A617007D68A9 /* SimpleBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBookManager.h; sourceTree = "<group>"; };
+		0BF37F1C1836A617007D68A9 /* SimpleBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleBookManager.m; sourceTree = "<group>"; };
+		0BF37F201836A62E007D68A9 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0BF37F211836A62E007D68A9 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0BF37F221836A62E007D68A9 /* EditBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBookViewController.h; sourceTree = "<group>"; };
+		0BF37F231836A62E007D68A9 /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
+		0BF37F241836A62E007D68A9 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		0BF37F251836A62E007D68A9 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +137,19 @@
 				0BF37EED1836A3D3007D68A9 /* AppDelegate.h */,
 				0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */,
 				0BF37EF01836A3D3007D68A9 /* Main.storyboard */,
+				0BF37F201836A62E007D68A9 /* DetailViewController.h */,
+				0BF37F211836A62E007D68A9 /* DetailViewController.m */,
+				0BF37F221836A62E007D68A9 /* EditBookViewController.h */,
+				0BF37F231836A62E007D68A9 /* EditBookViewController.m */,
+				0BF37F241836A62E007D68A9 /* MasterViewController.h */,
+				0BF37F251836A62E007D68A9 /* MasterViewController.m */,
+				0BF37F161836A617007D68A9 /* AddBookViewController.h */,
+				0BF37F171836A617007D68A9 /* AddBookViewController.m */,
+				0BF37F181836A617007D68A9 /* Book.h */,
+				0BF37F191836A617007D68A9 /* Book.m */,
+				0BF37F1A1836A617007D68A9 /* BookManagerProtocol.h */,
+				0BF37F1B1836A617007D68A9 /* SimpleBookManager.h */,
+				0BF37F1C1836A617007D68A9 /* SimpleBookManager.m */,
 				0BF37EF31836A3D3007D68A9 /* BooksViewController.h */,
 				0BF37EF41836A3D3007D68A9 /* BooksViewController.m */,
 				0BF37EF61836A3D3007D68A9 /* SummaryViewController.h */,
@@ -255,8 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF37EF81836A3D3007D68A9 /* SummaryViewController.m in Sources */,
+				0BF37F271836A62E007D68A9 /* EditBookViewController.m in Sources */,
+				0BF37F281836A62E007D68A9 /* MasterViewController.m in Sources */,
+				0BF37F1F1836A617007D68A9 /* SimpleBookManager.m in Sources */,
 				0BF37EEF1836A3D3007D68A9 /* AppDelegate.m in Sources */,
+				0BF37F261836A62E007D68A9 /* DetailViewController.m in Sources */,
 				0BF37EF51836A3D3007D68A9 /* BooksViewController.m in Sources */,
+				0BF37F1D1836A617007D68A9 /* AddBookViewController.m in Sources */,
+				0BF37F1E1836A617007D68A9 /* Book.m in Sources */,
 				0BF37EEB1836A3D3007D68A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

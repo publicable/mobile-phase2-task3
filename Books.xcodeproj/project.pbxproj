@@ -14,8 +14,8 @@
 		0BF37EEB1836A3D3007D68A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EEA1836A3D3007D68A9 /* main.m */; };
 		0BF37EEF1836A3D3007D68A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */; };
 		0BF37EF21836A3D3007D68A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF37EF01836A3D3007D68A9 /* Main.storyboard */; };
-		0BF37EF51836A3D3007D68A9 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF41836A3D3007D68A9 /* FirstViewController.m */; };
-		0BF37EF81836A3D3007D68A9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF71836A3D3007D68A9 /* SecondViewController.m */; };
+		0BF37EF51836A3D3007D68A9 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF41836A3D3007D68A9 /* BooksViewController.m */; };
+		0BF37EF81836A3D3007D68A9 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */; };
 		0BF37EFA1836A3D3007D68A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF37EF91836A3D3007D68A9 /* Images.xcassets */; };
 		0BF37F011836A3D3007D68A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37F001836A3D3007D68A9 /* XCTest.framework */; };
 		0BF37F021836A3D4007D68A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37EDE1836A3D3007D68A9 /* Foundation.framework */; };
@@ -46,10 +46,10 @@
 		0BF37EED1836A3D3007D68A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0BF37EF11836A3D3007D68A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0BF37EF31836A3D3007D68A9 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		0BF37EF41836A3D3007D68A9 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		0BF37EF61836A3D3007D68A9 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		0BF37EF71836A3D3007D68A9 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0BF37EF31836A3D3007D68A9 /* BooksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooksViewController.h; sourceTree = "<group>"; };
+		0BF37EF41836A3D3007D68A9 /* BooksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
+		0BF37EF61836A3D3007D68A9 /* SummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		0BF37EF91836A3D3007D68A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0BF37EFF1836A3D3007D68A9 /* BooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF37F001836A3D3007D68A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -118,10 +118,10 @@
 				0BF37EED1836A3D3007D68A9 /* AppDelegate.h */,
 				0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */,
 				0BF37EF01836A3D3007D68A9 /* Main.storyboard */,
-				0BF37EF31836A3D3007D68A9 /* FirstViewController.h */,
-				0BF37EF41836A3D3007D68A9 /* FirstViewController.m */,
-				0BF37EF61836A3D3007D68A9 /* SecondViewController.h */,
-				0BF37EF71836A3D3007D68A9 /* SecondViewController.m */,
+				0BF37EF31836A3D3007D68A9 /* BooksViewController.h */,
+				0BF37EF41836A3D3007D68A9 /* BooksViewController.m */,
+				0BF37EF61836A3D3007D68A9 /* SummaryViewController.h */,
+				0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */,
 				0BF37EF91836A3D3007D68A9 /* Images.xcassets */,
 				0BF37EE51836A3D3007D68A9 /* Supporting Files */,
 			);
@@ -254,9 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BF37EF81836A3D3007D68A9 /* SecondViewController.m in Sources */,
+				0BF37EF81836A3D3007D68A9 /* SummaryViewController.m in Sources */,
 				0BF37EEF1836A3D3007D68A9 /* AppDelegate.m in Sources */,
-				0BF37EF51836A3D3007D68A9 /* FirstViewController.m in Sources */,
+				0BF37EF51836A3D3007D68A9 /* BooksViewController.m in Sources */,
 				0BF37EEB1836A3D3007D68A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

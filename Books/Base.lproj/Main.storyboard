@@ -121,7 +121,7 @@
         <scene sceneID="Lqy-9P-iOe">
             <objects>
                 <navigationController id="1bJ-Hn-vCG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Books" id="MYR-Dk-R0U"/>
+                    <tabBarItem key="tabBarItem" title="Books" image="Books" id="MYR-Dk-R0U"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="USp-sT-Bge">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -503,7 +503,7 @@
         <scene sceneID="YB8-z3-6f1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U0W-Co-XbD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Summary" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="Calculator" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ALS-w3-IHa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -519,6 +519,10 @@
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Books" width="25" height="22"/>
+        <image name="Calculator" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

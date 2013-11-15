@@ -157,8 +157,8 @@ static SimpleBookManager *singletonInstance;
 
 - (CGFloat)meanPrice
 {
-    NSUInteger totalPrice = [self totalCost];
-    NSUInteger count = [self count];
+    CGFloat totalPrice = [[NSNumber numberWithInt:[self totalCost]] floatValue];
+    CGFloat count = [[NSNumber numberWithInt:[self count]] floatValue];
     
     return totalPrice / count;
 }

@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 publicable. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "BooksViewController.h"
 
-@interface FirstViewController ()
+@interface BooksViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation BooksViewController
 
 - (void)viewDidLoad
 {

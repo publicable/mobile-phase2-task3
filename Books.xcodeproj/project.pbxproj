@@ -14,7 +14,6 @@
 		0BF37EEB1836A3D3007D68A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EEA1836A3D3007D68A9 /* main.m */; };
 		0BF37EEF1836A3D3007D68A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */; };
 		0BF37EF21836A3D3007D68A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF37EF01836A3D3007D68A9 /* Main.storyboard */; };
-		0BF37EF51836A3D3007D68A9 /* BooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF41836A3D3007D68A9 /* BooksViewController.m */; };
 		0BF37EF81836A3D3007D68A9 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */; };
 		0BF37EFA1836A3D3007D68A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF37EF91836A3D3007D68A9 /* Images.xcassets */; };
 		0BF37F011836A3D3007D68A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37F001836A3D3007D68A9 /* XCTest.framework */; };
@@ -52,8 +51,6 @@
 		0BF37EED1836A3D3007D68A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0BF37EEE1836A3D3007D68A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0BF37EF11836A3D3007D68A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0BF37EF31836A3D3007D68A9 /* BooksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BooksViewController.h; sourceTree = "<group>"; };
-		0BF37EF41836A3D3007D68A9 /* BooksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksViewController.m; sourceTree = "<group>"; };
 		0BF37EF61836A3D3007D68A9 /* SummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		0BF37EF91836A3D3007D68A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -150,8 +147,6 @@
 				0BF37F1A1836A617007D68A9 /* BookManagerProtocol.h */,
 				0BF37F1B1836A617007D68A9 /* SimpleBookManager.h */,
 				0BF37F1C1836A617007D68A9 /* SimpleBookManager.m */,
-				0BF37EF31836A3D3007D68A9 /* BooksViewController.h */,
-				0BF37EF41836A3D3007D68A9 /* BooksViewController.m */,
 				0BF37EF61836A3D3007D68A9 /* SummaryViewController.h */,
 				0BF37EF71836A3D3007D68A9 /* SummaryViewController.m */,
 				0BF37EF91836A3D3007D68A9 /* Images.xcassets */,
@@ -292,7 +287,6 @@
 				0BF37F1F1836A617007D68A9 /* SimpleBookManager.m in Sources */,
 				0BF37EEF1836A3D3007D68A9 /* AppDelegate.m in Sources */,
 				0BF37F261836A62E007D68A9 /* DetailViewController.m in Sources */,
-				0BF37EF51836A3D3007D68A9 /* BooksViewController.m in Sources */,
 				0BF37F1D1836A617007D68A9 /* AddBookViewController.m in Sources */,
 				0BF37F1E1836A617007D68A9 /* Book.m in Sources */,
 				0BF37EEB1836A3D3007D68A9 /* main.m in Sources */,

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB929D11836B0FC00CCACE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0BB929D01836B0FC00CCACE8 /* README.md */; };
 		0BF37EDF1836A3D3007D68A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37EDE1836A3D3007D68A9 /* Foundation.framework */; };
 		0BF37EE11836A3D3007D68A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37EE01836A3D3007D68A9 /* CoreGraphics.framework */; };
 		0BF37EE31836A3D3007D68A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF37EE21836A3D3007D68A9 /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB929D01836B0FC00CCACE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = Books/README.md; sourceTree = "<group>"; };
 		0BF37EDB1836A3D3007D68A9 /* Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Books.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF37EDE1836A3D3007D68A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BF37EE01836A3D3007D68A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,7 @@
 		0BF37ED21836A3D3007D68A9 = {
 			isa = PBXGroup;
 			children = (
+				0BB929D01836B0FC00CCACE8 /* README.md */,
 				0BF37EE41836A3D3007D68A9 /* Books */,
 				0BF37F061836A3D4007D68A9 /* BooksTests */,
 				0BF37EDD1836A3D3007D68A9 /* Frameworks */,
@@ -262,6 +265,7 @@
 			files = (
 				0BF37EFA1836A3D3007D68A9 /* Images.xcassets in Resources */,
 				0BF37EE91836A3D3007D68A9 /* InfoPlist.strings in Resources */,
+				0BB929D11836B0FC00CCACE8 /* README.md in Resources */,
 				0BF37EF21836A3D3007D68A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +502,7 @@
 				0BF37F121836A3D4007D68A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BF37F131836A3D4007D68A9 /* Build configuration list for PBXNativeTarget "BooksTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				0BF37F151836A3D4007D68A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -136,6 +136,7 @@ static SimpleBookManager *singletonInstance;
 - (void)moveBookAtIndex:(NSUInteger)from toIndex:(NSUInteger)to
 {
     [bookArray exchangeObjectAtIndex:from withObjectAtIndex:to];
+    [self saveChanges];
 }
 
 - (NSArray *)allBooks

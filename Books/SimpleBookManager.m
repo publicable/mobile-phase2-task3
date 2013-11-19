@@ -53,14 +53,6 @@ static SimpleBookManager *singletonInstance;
     return self;
 }
 
-+(NSString*)generateRandomString:(int)num {
-    NSMutableString* string = [NSMutableString stringWithCapacity:num];
-    for (int i = 0; i < num; i++) {
-        [string appendFormat:@"%C", (unichar)('a' + arc4random_uniform(25))];
-    }
-    return string;
-}
-
 - (Book *)createBookWithTitle:(NSString *)title author:(NSString *)author price:(NSUInteger)price course:(NSString *)course isbn:(NSString *)isbn
 {
     Book *book = [[Book alloc]
@@ -103,9 +95,14 @@ static SimpleBookManager *singletonInstance;
 
 - (NSUInteger)minPrice
 {
+    if ([self count] == 0)
+    {
+        return 0;
+    }
+    
     int i;
     NSUInteger minPrice = MAX_INPUT;
-    for (i = 0; i < [bookArray count]; i++)
+    for (i = 0; i < [self count]; i++)
     {
         NSUInteger price = [[bookArray objectAtIndex:i] price];
         if (price < minPrice)
@@ -121,7 +118,7 @@ static SimpleBookManager *singletonInstance;
 {
     int i;
     NSUInteger maxPrice = 0;
-    for (i = 0; i < [bookArray count]; i++)
+    for (i = 0; i < [self count]; i++)
     {
         NSUInteger price = [[bookArray objectAtIndex:i] price];
         if (price > maxPrice)
@@ -158,10 +155,14 @@ static SimpleBookManager *singletonInstance;
 
 - (CGFloat)meanPrice
 {
-    CGFloat totalPrice = [[NSNumber numberWithInt:[self totalCost]] floatValue];
-    CGFloat count = [[NSNumber numberWithInt:[self count]] floatValue];
-    
-    return totalPrice / count;
+    if ([self count])
+    {
+        CGFloat totalPrice = [[NSNumber numberWithInt:[self totalCost]] floatValue];
+        CGFloat count = [[NSNumber numberWithInt:[self count]] floatValue];
+        return totalPrice / count;
+    } else {
+        return 0.0;
+    }
 }
 
 - (NSUInteger)count

@@ -7,6 +7,7 @@
 //
 
 #import "EditBookViewController.h"
+#import "SimpleBookManager.h"
 
 @interface EditBookViewController ()
 
@@ -38,18 +39,18 @@
 
 - (IBAction)cancel:(id)sender
 {
-    [self.delegate editBookViewControllerDidCancel:self];
+    [self.delegate editBookViewControllerDidCancel];
 }
 
 - (IBAction)done:(id)sender
 {
-    [self.delegate editBookViewControllerDidSave: self
-                                            book: _book
-                                       withTitle: _titleInput.text
-                                          author: _authorInput.text
-                                           price: (NSUInteger)[_priceInput.text integerValue]
-                                          course: _courseInput.text
-                                            isbn: _isbnInput.text];
+    [[SimpleBookManager sharedBookManager] editBook:_book
+                                              title:_titleInput.text
+                                             author:_authorInput.text
+                                              price:(NSUInteger)[_priceInput.text integerValue]
+                                             course:_courseInput.text
+                                               isbn:_isbnInput.text];
+    [self.delegate editBookViewControllerDidSave];
 }
 
 - (void)setBookDisplay

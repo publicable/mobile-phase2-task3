@@ -12,14 +12,8 @@
 @class EditBookViewController;
 
 @protocol EditBookViewControllerDelegate <NSObject>
-- (void)editBookViewControllerDidCancel:(EditBookViewController *)controller;
-- (void)editBookViewControllerDidSave:(EditBookViewController *)controller
-                                book:(Book*) book
-                           withTitle:(NSString *)title
-                              author:(NSString *)author
-                               price:(NSUInteger)price
-                              course:(NSString *)course
-                                isbn:(NSString *)isbn;
+- (void)editBookViewControllerDidCancel;
+- (void)editBookViewControllerDidSave;
 @end
 
 @interface EditBookViewController : UIViewController

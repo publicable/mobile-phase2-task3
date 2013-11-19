@@ -116,9 +116,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)addBookViewControllerDidSave:(AddBookViewController *)controller withTitle:(NSString *)title author:(NSString *)author price:(NSUInteger)price course:(NSString *)course isbn:(NSString *)isbn
+- (void)addBookViewControllerDidSave
 {
-    [[SimpleBookManager sharedBookManager] createBookWithTitle:title author:author price:price course:course isbn:isbn];
     [self insertNewObject];
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -126,14 +125,13 @@
 
 #pragma mark - EditBookViewControllerDelegate
 
-- (void)editBookViewControllerDidCancel:(EditBookViewController *)controller
+- (void)editBookViewControllerDidCancel
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)editBookViewControllerDidSave:(EditBookViewController *)controller book:(Book*)book withTitle:(NSString *)title author:(NSString *)author price:(NSUInteger)price course:(NSString *)course isbn:(NSString *)isbn
+- (void)editBookViewControllerDidSave
 {
-    [[SimpleBookManager sharedBookManager] editBook:book title:title author:author price:price course:course isbn:isbn];
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

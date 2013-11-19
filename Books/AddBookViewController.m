@@ -7,6 +7,7 @@
 //
 
 #import "AddBookViewController.h"
+#import "SimpleBookManager.h"
 
 @interface AddBookViewController ()
 
@@ -39,7 +40,7 @@
 
 - (IBAction)cancel:(id)sender
 {
-    [self.delegate addBookViewControllerDidCancel:self];
+    [self.delegate addBookViewControllerDidCancel];
 }
 
 - (IBAction)done:(id)sender
@@ -50,7 +51,9 @@
     NSString *course = _courseInput.text;
     NSString *isbn = _isbnInput.text;
     
-    [self.delegate addBookViewControllerDidSave:self withTitle:title author:author price:price course:course isbn:isbn];
+    [[SimpleBookManager sharedBookManager] createBookWithTitle:title author:author price:price course:course isbn:isbn];
+    
+    [self.delegate addBookViewControllerDidSave];
 }
 
 - (IBAction)titleChange:(id)sender {

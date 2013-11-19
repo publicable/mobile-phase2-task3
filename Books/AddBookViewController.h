@@ -11,13 +11,8 @@
 @class AddBookViewController;
 
 @protocol AddBookViewControllerDelegate <NSObject>
-- (void)addBookViewControllerDidCancel:(AddBookViewController *)controller;
-- (void)addBookViewControllerDidSave:(AddBookViewController *)controller
-                           withTitle:(NSString *)title
-                              author:(NSString *)author
-                               price:(NSUInteger)price
-                              course:(NSString *)course
-                                isbn:(NSString *)isbn;
+- (void)addBookViewControllerDidCancel;
+- (void)addBookViewControllerDidSave;
 @end
 
 @interface AddBookViewController : UIViewController
